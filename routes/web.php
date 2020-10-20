@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 Route::get('/about', [\App\Http\Controllers\HomeController::class, 'about']);
+Route::get('/{post}', [\App\Http\Controllers\HomeController::class, 'post']);
