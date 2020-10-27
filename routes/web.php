@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 Route::get('/about', [\App\Http\Controllers\HomeController::class, 'about']);
-Route::get('/{post}', [\App\Http\Controllers\HomeController::class, 'post']);
+Route::get('/{post}', [\App\Http\Controllers\HomeController::class, 'post'])
+    ->where('post', '[0-9]+');
+Route::get('/posts', [\App\Http\Controllers\PostController::class, 'index']);
+Route::get('/posts/create', [\App\Http\Controllers\PostController::class, 'create']);
+Route::post('/posts', [\App\Http\Controllers\PostController::class, 'store']);

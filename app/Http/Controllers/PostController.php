@@ -14,7 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::paginate();
+        return view('posts.index', compact('posts'));
     }
 
     /**
@@ -24,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -35,7 +36,15 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ]);
+        $post = new Post();
+        $post->title = $validated['title'];
+        $post->body = $validated['body'];
+        $post->save();
+        return redirect('/posts');
     }
 
     /**

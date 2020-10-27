@@ -18,9 +18,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -170,19 +168,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -195,21 +181,22 @@
       <updated>1601364456383</updated>
       <workItem from="1601364457437" duration="9006000" />
       <workItem from="1603178694233" duration="10867000" />
+      <workItem from="1603780060162" duration="7325000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="581" y="96" key="FileChooserDialogImpl" timestamp="1601364566423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="581" y="96" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601364566423" />
-    <state x="696" y="392" key="NewPhpFileDialog" timestamp="1603189667804">
+    <state x="696" y="392" key="NewPhpFileDialog" timestamp="1603783875172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="696" y="392" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601373967874" />
+    <state x="696" y="392" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603783875172" />
     <state x="696" y="392" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603189667804" />
   </component>
 </project>
