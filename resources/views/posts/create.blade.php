@@ -18,7 +18,7 @@
            @enderror
             <div class="form-group">
                 <label for="body">Content</label>
-                <textarea class="form-control" id="body" name="body" placeholder="Some body ..."></textarea>
+                <textarea rows="10" class="form-control" id="body" name="body" placeholder="Some body ..."></textarea>
             </div>
             <input class="btn btn-primary" type="submit" value="Create">
        </form>
