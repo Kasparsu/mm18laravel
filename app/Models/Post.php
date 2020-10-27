@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        'title',
+        'body'
+    ];
     public function getDisplayBodyAttribute(){
         return str_replace("\n", '<br>', $this->body);
     }
