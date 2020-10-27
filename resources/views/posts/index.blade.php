@@ -24,9 +24,13 @@
                         <td>{{$post->created_at}}</td>
                         <td>{{$post->updated_at}}</td>
                         <td>
-                            <a href="/posts/{{$post->id}}" class="btn btn-info">View</a>
-                            <a href="/posts/{{$post->id}}/edit" class="btn btn-warning">Edit</a>
-                            <a href="/posts/{{$post->id}}/delete" class="btn btn-danger">Delete</a>
+                            <a href="{{route('posts.show', ['post'=> $post->id])}}" class="btn btn-info">View</a>
+                            <a href="{{route('posts.edit', ['post'=> $post->id])}}" class="btn btn-warning">Edit</a>
+                            <form method="POST" action="{{route('posts.destroy', ['post'=> $post->id])}}">
+                                @csrf
+                                @method('DELETE')
+                                <input type="submit" value="Delete" class="btn btn-danger">
+                            </form>
                         </td>
                     </tr>
                 @endforeach

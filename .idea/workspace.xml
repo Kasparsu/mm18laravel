@@ -147,6 +147,12 @@
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/shahvirag/laravel-ui-bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iAxz1cle8Qhm8wFtacEX1MPnN1" />
@@ -181,7 +187,7 @@
       <updated>1601364456383</updated>
       <workItem from="1601364457437" duration="9006000" />
       <workItem from="1603178694233" duration="10867000" />
-      <workItem from="1603780060162" duration="11424000" />
+      <workItem from="1603780060162" duration="18516000" />
     </task>
     <servers />
   </component>

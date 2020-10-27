@@ -12,7 +12,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$post->title}}</h5>
                                 <p class="card-text">{{ $post->excerpt }}</p>
-                                <a href="/{{$post->id}}" class="card-link">Read more</a>
+                                <a href="{{ route('post', ['post' => $post->id]) }}" class="card-link">Read more</a>
                             </div>
                         </div>
                     </div>

@@ -4,8 +4,9 @@
 
 @section('content')
     <div class="container mb-5">
-        <form method="post" action="/posts/{{$post->id}}">
+        <form method="POST" action="/posts/{{$post->id}}">
             @csrf
+            @method('PATCH')
             @error('title')
             <div class="alert alert-danger">{{$message}}</div>
             @enderror
