@@ -33,4 +33,8 @@ class Post extends Model
     public function getAuthorAttribute(){
         return $this->user->name;
     }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
 }

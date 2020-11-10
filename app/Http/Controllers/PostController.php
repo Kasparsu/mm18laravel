@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreatePostRequest;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -15,7 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::paginate();
+        $posts = Auth::user()->posts()->paginate();
         return view('posts.index', compact('posts'));
     }
 
@@ -42,6 +43,8 @@ class PostController extends Controller
 //            'body' => 'required'
 //        ]);
         $post = new Post($request->validated());
+        //$post->user_id = Auth::user()->id;
+        $post->user()->associate(Auth::user());
 //        $post->title = $validated['title'];
 //        $post->body = $validated['body'];
         $post->save();

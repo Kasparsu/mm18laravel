@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b0735c98-4928-478a-9b49-685c2b124e62" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
@@ -164,9 +167,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/et" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kaspar.suursalu\mm18\learnlaravel\resources\lang\et" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -189,7 +197,7 @@
       <workItem from="1603178694233" duration="10867000" />
       <workItem from="1603780060162" duration="19115000" />
       <workItem from="1603873399005" duration="74000" />
-      <workItem from="1604989902187" duration="5090000" />
+      <workItem from="1604989902187" duration="16770000" />
     </task>
     <servers />
   </component>
@@ -202,10 +210,14 @@
     </state>
     <state x="-1339" y="96" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1603873471612" />
     <state x="581" y="96" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601364566423" />
-    <state x="696" y="392" key="NewPhpFileDialog" timestamp="1603790386826">
+    <state x="696" y="392" key="NewPhpFileDialog" timestamp="1605010006714">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="696" y="392" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603790386826" />
+    <state x="696" y="392" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605010006714" />
     <state x="696" y="392" key="NewPhpFileDialog/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603189667804" />
+    <state x="362" y="-2" width="1177" height="1976" key="search.everywhere.popup" timestamp="1605008288588">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="362" y="-2" width="1177" height="1976" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605008288588" />
   </component>
 </project>
