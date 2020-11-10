@@ -12,11 +12,25 @@ class Post extends Model
         'title',
         'body'
     ];
+    protected $with = ['user'];
+    protected $appends = [
+        'displayBody',
+        'excerpt',
+        'author'
+    ];
     public function getDisplayBodyAttribute(){
         return str_replace("\n", '<br>', $this->body);
     }
 
     public function getExcerptAttribute(){
         return explode("\n\n", $this->body)[0];
+    }
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function getAuthorAttribute(){
+        return $this->user->name;
     }
 }
