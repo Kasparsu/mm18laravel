@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreatePostRequest;
+use App\Models\Image;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -38,16 +40,24 @@ class PostController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
+        $filename = request()->file('image')->store('', ['disk'=> 'public']);
+
+
 //        $validated = $request->validate([
 //            'title' => 'required|max:255',
 //            'body' => 'required'
 //        ]);
         $post = new Post($request->validated());
+
         //$post->user_id = Auth::user()->id;
         $post->user()->associate(Auth::user());
 //        $post->title = $validated['title'];
 //        $post->body = $validated['body'];
         $post->save();
+        $image = new Image();
+        $image->path = Storage::disk('public')->url($filename);
+        $image->post()->associate($post);
+        $image->save();
         return redirect('/posts');
     }
 

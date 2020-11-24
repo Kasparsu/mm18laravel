@@ -34,7 +34,13 @@ class Post extends Model
         return $this->user->name;
     }
 
-    public function comments(){
+
+    public function comments()
+    {
         return $this->hasMany(Comment::class);
+    }
+
+    public function image(){
+        return $this->hasOne(Image::class);
     }
 }
