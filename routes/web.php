@@ -17,6 +17,8 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'home']);
 Route::get('/about', [\App\Http\Controllers\HomeController::class, 'about']);
 Route::get('/{post}', [\App\Http\Controllers\HomeController::class, 'post'])
     ->where('post', '[0-9]+')->name('post');
+Route::get('/mail', [\App\Http\Controllers\HomeController::class, 'contact']);
+Route::post('/mail', [\App\Http\Controllers\HomeController::class, 'mail']);
 
 //Route::prefix('/posts')->group(function(){
 //    Route::get('', [\App\Http\Controllers\PostController::class, 'index']);
@@ -46,4 +48,6 @@ Route::middleware(['auth'])->group(function() {
     //Route::resource('comments', \App\Http\Controllers\CommentController::class)->only(['store']);
     Route::post('/{post}/comment', [\App\Http\Controllers\CommentController::class, 'store'])
         ->where('post', '[0-9]+')->name('comments.store');
+    Route::post('/posts/{post}/images', [\App\Http\Controllers\ImageController::class, 'store'])
+        ->name('posts.images');
 });

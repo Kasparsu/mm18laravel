@@ -14,6 +14,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/posts">{{__('Posts')}}</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/mail">{{__('Mail')}}</a>
+            </li>
         </ul>
         <ul class="navbar-nav ml-auto">
             <!-- Authentication Links -->

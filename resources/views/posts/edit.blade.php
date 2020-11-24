@@ -34,8 +34,20 @@
             </div>
             <input class="btn btn-primary" type="submit" value="Edit">
         </form>
+        <form action="{{route('posts.images', ['post' => $post->id])}}" class="dropzone" id="my-awesome-dropzone">
+            @csrf
+            <div class="fallback">
+                <input name="file" type="file" multiple />
+            </div>
+        </form>
     </div>
 @endsection
 
+@push('styles')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.min.css" integrity="sha512-3g+prZHHfmnvE1HBLwUnVuunaPOob7dpksI7/v6UnF/rnKGwHf/GdEq9K7iEN7qTtW+S0iivTcGpeTBqqB04wA==" crossorigin="anonymous" />
+@endpush
 
+@push('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.min.js" integrity="sha512-8l10HpXwk93V4i9Sm38Y1F3H4KJlarwdLndY9S5v+hSAODWMx3QcAVECA23NTMKPtDOi53VFfhIuSsBjjfNGnA==" crossorigin="anonymous"></script>
+@endpush
 
